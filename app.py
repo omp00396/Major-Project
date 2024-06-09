@@ -49,17 +49,17 @@ pose_type = st.sidebar.selectbox(
 )
 
 if pose_type == 'Anjaneyasana':
-    st.image('img/Anjaneyasana.jpg')
+    st.image('Anjaneyasana.jpg')
 elif pose_type == 'Katichakrasana':
-    st.image('img/katichakrasana.png')
+    st.image('katichakrasana.png')
 elif pose_type == 'Padmasana':
-    st.image('img/padmasana.jpg')
+    st.image('padmasana.jpg')
 elif pose_type == 'Trikonasana':
-    st.image('img/trikonasana.jpeg')
+    st.image('trikonasana.jpeg')
 elif pose_type == 'Vrkasana':
-    st.image('img/vrkasana.jpg')
+    st.image('vrkasana.jpg')
 
-model = YOLO(r'C:\PyCharm_project_final_year\Yolov8_yoga_pose\best.pt')
+model = YOLO('best.pt')
 
 
 # image/video options
